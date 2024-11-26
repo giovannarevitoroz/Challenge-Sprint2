@@ -1,0 +1,1867 @@
+{
+  "intents": [
+    {
+      "intent": "agendar_servico",
+      "examples": [
+        {
+          "text": "Boa tarde. Como posso agendar um serviço?"
+        },
+        {
+          "text": "Bom dia, como faço para agendar um serviço na oficina?"
+        },
+        {
+          "text": "Como faço para agendar um serviço para o meu veículo?"
+        },
+        {
+          "text": "Como faço para marcar um serviço para o meu carro?"
+        },
+        {
+          "text": "Gostaria de marcar um serviço."
+        },
+        {
+          "text": "Olá. Quero agendar um serviço na Porto."
+        },
+        {
+          "text": "Poderia me ajudar a gendar um serviço para meu veículo?"
+        },
+        {
+          "text": "Quais os serviços disponíveis para o agendamento?"
+        },
+        {
+          "text": "Quero agendar um serviço para o meu carro."
+        },
+        {
+          "text": "Quero marcar um agendamento para o meu carro."
+        },
+        {
+          "text": "Quero marcar um serviço."
+        },
+        {
+          "text": "Tudo bem? Poderia me ajudar a agendar um serviço para o meu carro?"
+        }
+      ],
+      "description": "Ajuda com o agendamento de um serviço."
+    },
+    {
+      "intent": "auto_diagnostico",
+      "examples": [
+        {
+          "text": "Boa tarde. Gostaria de começar um autodiagnóstico do meu carro."
+        },
+        {
+          "text": "Bom dia! Quero ajuda para iniciar um autodiagnóstico para o meu veículo."
+        },
+        {
+          "text": "Como começo o autodiagnóstico?"
+        },
+        {
+          "text": "Desejo um autodiagnóstico."
+        },
+        {
+          "text": "Me ajude a iniciar um autodiagnóstico."
+        },
+        {
+          "text": "Olá! Posso iniciar o autodiagnóstico para o meu carro?"
+        },
+        {
+          "text": "Olá! Quero iniciar um autodiagnóstico."
+        },
+        {
+          "text": "Poderia me auxiliar a iniciar um autodiagnóstico?"
+        },
+        {
+          "text": "Preciso de um autodiagnóstico."
+        },
+        {
+          "text": "Preciso de um autodiagnóstico para o meu carro."
+        },
+        {
+          "text": "Qual o problema com o meu carro? O autodiagnóstico é capaz de me ajudar?"
+        },
+        {
+          "text": "Quero um autodiagnóstico."
+        }
+      ],
+      "description": "Ajuda o usuário a iniciar o autodiagnóstico."
+    },
+    {
+      "intent": "auto_orcamento",
+      "examples": [
+        {
+          "text": "Acabei de fazer um autodiagnóstico. Posso iniciar o autoorçamento?"
+        },
+        {
+          "text": "Boa tarde. Quero iniciar um auto orçamento."
+        },
+        {
+          "text": "Bom dia, poderia me ajudar com o auto orçamento do meu carro?"
+        },
+        {
+          "text": "Como faço para fazer um auto orçamento de um serviço?"
+        },
+        {
+          "text": "Desejo fazer um auto orçamento de um conserto de um ar-condicionado."
+        },
+        {
+          "text": "Gostaria de fazer um auto orçamento."
+        },
+        {
+          "text": "Me ajude a iniciar um auto orçamento."
+        },
+        {
+          "text": "Poderia me ajudar a iniciar um auto orçamento?"
+        },
+        {
+          "text": "Posso iniciar o auto orçamento agora?"
+        },
+        {
+          "text": "Quero começar um auto orçamento."
+        },
+        {
+          "text": "Quero fazer o auto orçamento."
+        },
+        {
+          "text": "Quero que você me ajude com o auto orçamento."
+        },
+        {
+          "text": "Quero realizar o auto orçamento"
+        },
+        {
+          "text": "Tudo bem? Poderia me ajudar a iniciar o auto orçamento?"
+        }
+      ],
+      "description": "Ajuda o usuário com o auto orçamento de um serviço."
+    },
+    {
+      "intent": "cancelar_servico",
+      "examples": [
+        {
+          "text": "Agendei um serviço mas preciso cancelá-lo. Pode me ajudar?"
+        },
+        {
+          "text": "Boa noite, quero cancelar o serviço agendado."
+        },
+        {
+          "text": "Bom dia, desejo cancelar o agendamento do serviço."
+        },
+        {
+          "text": "Como faço para cancelar o serviço agendado?"
+        },
+        {
+          "text": "Gostaria de cancelar o serviço agendado."
+        },
+        {
+          "text": "Me ajude a cancelar o serviço que agendei."
+        },
+        {
+          "text": "Me auxilie a cancelar o serviço agendado."
+        },
+        {
+          "text": "Não quero mais realizar o serviço. Como faço para cancelá-lo?"
+        },
+        {
+          "text": "Olá! Quero cancelar o serviço que acabei de agendar."
+        },
+        {
+          "text": "Poderia me ajudar a cancelar o agendamento?"
+        },
+        {
+          "text": "Quero cancelar o agendamento do serviço."
+        },
+        {
+          "text": "Quero que você me ajude a cancelar o serviço que agendei."
+        }
+      ],
+      "description": "Ajuda o usuário a cancelar o serviço agendado."
+    },
+    {
+      "intent": "disponibilidade_pecas",
+      "examples": [
+        {
+          "text": "A peça do ar-condicionado está disponível?"
+        },
+        {
+          "text": "A peça do freio está presente na oficina mais próxima?"
+        },
+        {
+          "text": "A peça para o meu serviço está esgotada?"
+        },
+        {
+          "text": "Bom dia. Quero saber a disponibilidade de uma peça."
+        },
+        {
+          "text": "Em quais oficinas a peça do airbag está disponível?"
+        },
+        {
+          "text": "Gostaria de saber se uma peça está disponível."
+        },
+        {
+          "text": "Poderia me ajudar com a disponibilidade de uma peça?"
+        },
+        {
+          "text": "Posso consultar a disponibilidade de uma peça para o meu carro?"
+        },
+        {
+          "text": "Preciso saber se as peças para o reparo estão esgotadas ou não."
+        },
+        {
+          "text": "Quero consultar a disponibilidade de uma peça."
+        },
+        {
+          "text": "Quero que me ajude com a disponibilidade de uma peça do carro."
+        },
+        {
+          "text": "Quero que você me auxilie com a disponibilidade de uma peça."
+        }
+      ],
+      "description": "Ajuda com a disponibilidade de determinadas peças e em quais oficinas."
+    },
+    {
+      "intent": "localizacao_oficina",
+      "examples": [
+        {
+          "text": "Boa noite. Você teria uma lista com as oficinas da Porto Seguro?"
+        },
+        {
+          "text": "Gostaria de saber o endereço das oficinas da Porto Seguro."
+        },
+        {
+          "text": "Me de as localizações das oficinas."
+        },
+        {
+          "text": "Oi bot! Pode me dizer o endereço das oficinas?"
+        },
+        {
+          "text": "Olá! Quero que você me auxilie dizendo a localização das oficinas."
+        },
+        {
+          "text": "Poderia me informar a localização das oficinas da Porto?"
+        },
+        {
+          "text": "Quais as oficinas e os endereços respectivos?"
+        },
+        {
+          "text": "Qual a localização das oficinas da Porto?"
+        },
+        {
+          "text": "Qual a oficina mais próxima da minha casa?"
+        },
+        {
+          "text": "Qual o endereço das oficinas da Porto?"
+        },
+        {
+          "text": "Quero a localização das oficinas."
+        },
+        {
+          "text": "Tudo bem? Quais as oficinas disponíveis?"
+        }
+      ],
+      "description": "Ajuda com a localização das oficinas disponíveis da Porto Seguro."
+    },
+    {
+      "intent": "status_servico",
+      "examples": [
+        {
+          "text": "Bom dia. Como anda o serviço no meu carro?"
+        },
+        {
+          "text": "Como se encontra o status do serviço em meu veículo?"
+        },
+        {
+          "text": "Em qual etapa do serviço meu carro está?"
+        },
+        {
+          "text": "Me retorne o status do serviço."
+        },
+        {
+          "text": "Olá! Como está o progresso do serviço no meu carro?"
+        },
+        {
+          "text": "Pode me auxiliar com o status do serviço?"
+        },
+        {
+          "text": "Qual o progresso no serviço?"
+        },
+        {
+          "text": "Qual o status do serviço no meu carro?"
+        },
+        {
+          "text": "Qual o status do serviço sendo feito em meu carro?"
+        },
+        {
+          "text": "Quanto falta para o serviço acabar?"
+        },
+        {
+          "text": "Quero que você me informe o status do serviço."
+        },
+        {
+          "text": "Quero saber como está o status do serviço que marquei."
+        }
+      ],
+      "description": "Ajuda com o status / progresso atual do serviço."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "agendamento_data",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "20/05",
+          "synonyms": [
+            "vinte de maio",
+            "vinte do cinco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "21/05",
+          "synonyms": [
+            "vinte e um de maio",
+            "vinte e um do cinco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22/05",
+          "synonyms": [
+            "vinte e dois de maio",
+            "vinte e dois do cinco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "23/05",
+          "synonyms": [
+            "vinte e três de maio",
+            "vinte e três do cinco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "24/05",
+          "synonyms": [
+            "vinte e quatro de maio",
+            "vinte e quatro do cinco"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "inicializacao_telegram",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "/start",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "localizacao_oficinas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Av. Lins de Vasconcelos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Conceição",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ipiranga",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jardim Paulista",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "São Caetano do Sul",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pecas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Barra estabilizadora",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bateria 40ah",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bateria 60ah",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Braço de Direção",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Compressor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coxim do amortecedor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Disco de freio dianteiro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Disco de freio traseiro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Filtro de Cabine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pivô",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pneu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Roda",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pecas_disponiveis",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Barra estabilizadora",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bateria 40ah",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bateria 60ah",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Compressor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coxim do amortecedor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Disco de freio dianteiro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pneu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Roda",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "problemas_diagnostico",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "alinhamento",
+          "synonyms": [
+            "desalinhado",
+            "puxando",
+            "roda torta",
+            "torto",
+            "volante",
+            "volante desalinhado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ar-condicionado",
+          "synonyms": [
+            "ar-condicionado não gela",
+            "ar não funciona",
+            "cheiro ruim",
+            "gelando",
+            "não esfria",
+            "não gela"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "balanceamento",
+          "synonyms": [
+            "desgastado",
+            "pneu",
+            "pneu desgastado",
+            "roda",
+            "tremendo",
+            "tremer",
+            "vibração",
+            "vibrando"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bateria",
+          "synonyms": [
+            "elétrico",
+            "ligando",
+            "não dá partida",
+            "não está ligando",
+            "não liga",
+            "painel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "freio",
+          "synonyms": [
+            "frear",
+            "freios",
+            "frenagem",
+            "não freia",
+            "sem freio"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "servicos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Alinhamento de Rodas",
+          "synonyms": [
+            "150"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Balanceamento das Rodas",
+          "synonyms": [
+            "200"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manutenção da Suspensão",
+          "synonyms": [
+            "150"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manutenção do Ar-condicionado",
+          "synonyms": [
+            "75"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manutenção dos freios",
+          "synonyms": [
+            "125"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Troca da Bateria",
+          "synonyms": [
+            "125"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "n",
+            "nada",
+            "não quero",
+            "negativo",
+            "nem",
+            "nn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "afirmativo",
+            "com certeza",
+            "confirmo",
+            "ok",
+            "s",
+            "ss"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "status",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Agendado",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Sou o Chatbot da Porto Auto Tech! Como posso te ajudar hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "status": null,
+        "oficina": null,
+        "servico": null,
+        "agendamento_data": null
+      },
+      "conditions": "welcome || @inicializacao_telegram:(/start)",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1713549883552",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Ok! Em qual Centro Automotivo Porto gostaria de realizar o serviço?",
+            "options": [
+              {
+                "label": "Av. Lins de Vasconcelos",
+                "value": {
+                  "input": {
+                    "text": "Av. Lins de Vasconcelos"
+                  }
+                }
+              },
+              {
+                "label": "Conceição",
+                "value": {
+                  "input": {
+                    "text": "Conceição"
+                  }
+                }
+              },
+              {
+                "label": "Jardim Paulista",
+                "value": {
+                  "input": {
+                    "text": "Jardim Paulista"
+                  }
+                }
+              },
+              {
+                "label": "Ipiranga",
+                "value": {
+                  "input": {
+                    "text": "Ipiranga"
+                  }
+                }
+              },
+              {
+                "label": "São Caetano do Sul",
+                "value": {
+                  "input": {
+                    "text": "São Caetano do Sul"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_8_1713465337947",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1713465337948",
+      "previous_sibling": "handler_6_1713465337948"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Certo! Qual serviço gostaria de agendar?",
+            "options": [
+              {
+                "label": "Balanceamento das Rodas",
+                "value": {
+                  "input": {
+                    "text": "Balanceamento das Rodas"
+                  }
+                }
+              },
+              {
+                "label": "Manutenção da Suspensão",
+                "value": {
+                  "input": {
+                    "text": "Manutenção da Suspensão"
+                  }
+                }
+              },
+              {
+                "label": "Manutenção do Ar-condicionado",
+                "value": {
+                  "input": {
+                    "text": "Manutenção do Ar-condicionado"
+                  }
+                }
+              },
+              {
+                "label": "Manutenção dos freios",
+                "value": {
+                  "input": {
+                    "text": "Manutenção dos freios"
+                  }
+                }
+              },
+              {
+                "label": "Troca da Bateria",
+                "value": {
+                  "input": {
+                    "text": "Troca da Bateria"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1713465103211",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1713465103217",
+      "previous_sibling": "handler_3_1713465103217"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1713465103211",
+      "context": {
+        "servico": "@servicos.literal"
+      },
+      "conditions": "@servicos",
+      "event_name": "input",
+      "dialog_node": "handler_3_1713465103217"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1713465653031",
+      "context": {
+        "agendamento_data": "@agendamento_data.literal"
+      },
+      "conditions": "@agendamento_data",
+      "event_name": "input",
+      "dialog_node": "handler_3_1713465653032"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1713465337947",
+      "context": {
+        "oficina": "@localizacao_oficinas.literal"
+      },
+      "conditions": "@localizacao_oficinas",
+      "event_name": "input",
+      "dialog_node": "handler_6_1713465337948"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Certo! Qual dia gostaria de realizar o serviço?",
+            "options": [
+              {
+                "label": "24/05",
+                "value": {
+                  "input": {
+                    "text": "24/05"
+                  }
+                }
+              },
+              {
+                "label": "23/05",
+                "value": {
+                  "input": {
+                    "text": "23/05"
+                  }
+                }
+              },
+              {
+                "label": "22/05",
+                "value": {
+                  "input": {
+                    "text": "22/05"
+                  }
+                }
+              },
+              {
+                "label": "21/05",
+                "value": {
+                  "input": {
+                    "text": "21/05"
+                  }
+                }
+              },
+              {
+                "label": "20/05",
+                "value": {
+                  "input": {
+                    "text": "20/05"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1713465653031",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1713465653032",
+      "previous_sibling": "handler_3_1713465653032"
+    },
+    {
+      "type": "frame",
+      "title": "Agendar um serviço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! O serviço de $servico ficará agendado para o dia $agendamento_data e será realizado no Centro Automotivo $oficina. Está de acordo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#agendar_servico && $status != \"Agendado\"",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1713464977865",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Serviço não ativo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nenhum serviço ativo. Agende um para conferir o status atual. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#status_servico && $servico == null",
+      "dialog_node": "node_10_1713467110336",
+      "previous_sibling": "node_6_1713467021681"
+    },
+    {
+      "type": "standard",
+      "title": "Auto orçamento sem diagnóstico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você ainda não fez um autodiagnóstico. Faça um para conferir o orçamento. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#auto_orcamento && $problema == null",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1713480734715",
+      "previous_sibling": "node_6_1713480828094"
+    },
+    {
+      "type": "standard",
+      "title": "Auto orçamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Deseja consultar o auto orçamento para o problema de $problema, certo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#auto_orcamento && $problema != null",
+      "dialog_node": "node_10_1713549071996",
+      "previous_sibling": "node_10_1713480734715"
+    },
+    {
+      "type": "standard",
+      "title": "Oficina Lins",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O endereço da oficina da Av. Lins de Vasconcelos é Av. Lins de Vasconcelos, 2474 - Vila Mariana, São Paulo - SP, 04112-001."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#localizacao_oficina && @localizacao_oficinas:(Av. Lins de Vasconcelos)",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1713550230137",
+      "previous_sibling": "node_10_1713549071996"
+    },
+    {
+      "type": "standard",
+      "title": "Oficina Conceição",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O endereço da oficina da Conceição é Av. Diederichsen, 1426 - Vila Guarani (Zona Sul), São Paulo - SP, 04310-001."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#localizacao_oficina && @localizacao_oficinas:Conceição",
+      "dialog_node": "node_2_1713550316615",
+      "previous_sibling": "node_1_1713550230137"
+    },
+    {
+      "type": "standard",
+      "title": "Problema ar-condicionado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu problema atual está relacionado a alguma parte do ar-condicionado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1713467021681",
+      "context": {
+        "problema": "ar-condicionado"
+      },
+      "conditions": "@problemas_diagnostico:ar-condicionado",
+      "dialog_node": "node_3_1713478052105"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os custos para a manutenção do ar-condicionado ficarão em 150 reais (serviço + peças)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713549071996",
+      "conditions": "@sim-nao:sim && $problema == 'ar-condicionado'",
+      "dialog_node": "node_3_1713548838741"
+    },
+    {
+      "type": "standard",
+      "title": "Oficina São Caetano do Sul",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O endereço da oficina de São Caetano do Sul é Av. Sen. Roberto Símonsen, 1305 - Cerâmica, São Caetano do Sul - SP, 09530-402."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#localizacao_oficina && @localizacao_oficinas:(São Caetano do Sul)",
+      "dialog_node": "node_3_1713550368183",
+      "previous_sibling": "node_2_1713550316615"
+    },
+    {
+      "type": "standard",
+      "title": "Problema freio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu problema atual está relacionado aos discos ou pastilhas de freio."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1713467021681",
+      "context": {
+        "problema": "freio"
+      },
+      "conditions": "@problemas_diagnostico:freio",
+      "dialog_node": "node_4_1713478930955",
+      "previous_sibling": "node_3_1713478052105"
+    },
+    {
+      "type": "standard",
+      "title": "Problema bateria",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu problema atual está relacionado a bateria do carro. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1713467021681",
+      "context": {
+        "problema": "bateria"
+      },
+      "conditions": "@problemas_diagnostico:bateria",
+      "dialog_node": "node_4_1713479419491",
+      "previous_sibling": "node_4_1713478930955"
+    },
+    {
+      "type": "standard",
+      "title": "Oficina Jardim Paulista",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O endereço da oficina do Jardim Paulista é Av. Brigadeiro Luís Antônio, 3383 - Jardim Paulista, São Paulo - SP, 01401-001."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#localizacao_oficina && @localizacao_oficinas:(Jardim Paulista)",
+      "dialog_node": "node_4_1713550389871",
+      "previous_sibling": "node_3_1713550368183"
+    },
+    {
+      "type": "standard",
+      "title": "Cancelar o serviço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Deseja mesmo cancelar o agendamento para o dia $agendamento_data, no Centro Automotivo $oficina, com o serviço de $servico?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#cancelar_servico && $status == \"Agendado\"",
+      "dialog_node": "node_4_1715372657662",
+      "previous_sibling": "node_9_1715032500359"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Serviço agendado com sucesso. Estaremos no aguardo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713464977865",
+      "context": {
+        "status": "Agendado"
+      },
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_5_1713469422786"
+    },
+    {
+      "type": "standard",
+      "title": "Oficina Ipiranga",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O endereço da oficina no Ipiranga é R. Silva Bueno, 1176 - Ipiranga, São Paulo - SP, 04208-000."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#localizacao_oficina && @localizacao_oficinas:Ipiranga",
+      "dialog_node": "node_5_1713550428261",
+      "previous_sibling": "node_4_1713550389871"
+    },
+    {
+      "type": "standard",
+      "title": "Iniciar autodiagnóstico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o problema com o seu carro?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#auto_diagnostico",
+      "dialog_node": "node_6_1713467021681",
+      "previous_sibling": "node_9_1713466899950"
+    },
+    {
+      "type": "standard",
+      "title": "Verificar disponibilidade de uma peça citando ela",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$peca está disponível!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "peca": "@pecas.literal"
+      },
+      "conditions": "#disponibilidade_pecas && @pecas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1713468489093",
+      "previous_sibling": "node_6_1715372962573"
+    },
+    {
+      "type": "standard",
+      "title": "Peça disponível",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$peca está disponível!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1713466899950",
+      "context": {
+        "peca": "@pecas.literal"
+      },
+      "conditions": "@pecas && @pecas_disponiveis",
+      "dialog_node": "node_6_1713468567169"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Agendamento cancelado. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713464977865",
+      "context": {
+        "oficina": null,
+        "servico": null,
+        "agendamento_data": null
+      },
+      "conditions": "@sim-nao:não",
+      "dialog_node": "node_6_1713469451443",
+      "previous_sibling": "node_5_1713469422786"
+    },
+    {
+      "type": "standard",
+      "title": "Problema alinhamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu problema atual está relacionado ao alinhamento das rodas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1713467021681",
+      "context": {
+        "problema": "alinhamento"
+      },
+      "conditions": "@problemas_diagnostico:alinhamento",
+      "dialog_node": "node_6_1713479485391",
+      "previous_sibling": "node_4_1713479419491"
+    },
+    {
+      "type": "standard",
+      "title": "Status do serviço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Status do serviço - $status: \n\nServiço: $servico\nCentro Automotivo: $oficina\nData: $agendamento_data"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#status_servico && $servico != null",
+      "dialog_node": "node_6_1713480828094",
+      "previous_sibling": "node_10_1713467110336"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os custos para o balanceamento das rodas e pneus ficarão em 200 reais (serviço + peças)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713549071996",
+      "conditions": "@sim-nao:sim && $problema == 'balanceamento'",
+      "dialog_node": "node_6_1713549498637",
+      "previous_sibling": "node_9_1713549466040"
+    },
+    {
+      "type": "standard",
+      "title": "Ajuda com a localização das oficinas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão as localizações dos Centros Automotivos Porto Seguro:\n\n- Av. Lins de Vasconcelos, 2474 - Vila Mariana, São Paulo - SP, 04112-001\n- Av. Sen. Roberto Símonsen, 1305 - Cerâmica, São Caetano do Sul - SP, 09530-402\n- R. Silva Bueno, 1176 - Ipiranga, São Paulo - SP, 04208-000\n- Av. Brigadeiro Luís Antônio, 3383 - Jardim Paulista, São Paulo - SP, 01401-001\n- Av. Diederichsen, 1426 - Vila Guarani (Zona Sul), São Paulo - SP, 04310-001"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#localizacao_oficina",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1713549883552",
+      "previous_sibling": "node_5_1713550428261"
+    },
+    {
+      "type": "standard",
+      "title": "Serviço não marcado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você ainda não agendou nenhum serviço para cancelá-lo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#cancelar_servico && $status != \"Agendado\"",
+      "dialog_node": "node_6_1715372962573",
+      "previous_sibling": "node_4_1715372657662"
+    },
+    {
+      "type": "standard",
+      "title": "Peça não existe no sistema",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A peça informada não está disponível em nosso sistema. Informe outra peça."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1713466899950",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1713468567169"
+      },
+      "conditions": "@pecas != \"Braço de Direção\" &&             @pecas != \"Coxim do amortecedor\" &&            @pecas != \"Compressor\" &&           @pecas != \"Barra estabilizadora\" &&          @pecas != \"Filtro de Cabine\" &&         @pecas != \"Disco de freio dianteiro\" &&      @pecas != \"Disco de freio traseiro\" &&     @pecas != \"Bateria 40ah\" &&    @pecas != \"Bateria 60ah\" &&   @pecas != \"Pneu\" &&  @pecas != \"Roda\" && @pecas != \"Pivô\"",
+      "dialog_node": "node_7_1713468601188",
+      "previous_sibling": "node_6_1713468567169"
+    },
+    {
+      "type": "standard",
+      "title": "Problema balanceamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu problema está relacionado ao balanceamento dos pneus ou rodas. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1713467021681",
+      "context": {
+        "problema": "balanceamento"
+      },
+      "conditions": "@problemas_diagnostico:balanceamento",
+      "dialog_node": "node_7_1713479516587",
+      "previous_sibling": "node_6_1713479485391"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os custos para a substituição da bateria ficarão em 600 reais (serviço + peças)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713549071996",
+      "conditions": "@sim-nao:sim && $problema == 'bateria'",
+      "dialog_node": "node_7_1713549391907",
+      "previous_sibling": "node_9_1713549344741"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Iremos te notificar quando a peça estiver disponível."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1715367052656",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_7_1715366739120"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Não iremos te notificar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1715367052656",
+      "conditions": "@sim-nao:não",
+      "dialog_node": "node_7_1715366760773",
+      "previous_sibling": "node_7_1715366739120"
+    },
+    {
+      "type": "standard",
+      "title": "cancelar serviço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Seu agendamento foi cancelado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1715372657662",
+      "context": {
+        "status": null,
+        "oficina": null,
+        "servico": null,
+        "agendamento_data": null
+      },
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_7_1715372809990"
+    },
+    {
+      "type": "standard",
+      "title": "Peça indisponível",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A peça informada está indisponível. Gostaria de ser notificado quando ela estiver disponível?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1713466899950",
+      "conditions": "@pecas",
+      "dialog_node": "node_8_1715367052656",
+      "previous_sibling": "node_7_1713468601188"
+    },
+    {
+      "type": "standard",
+      "title": "não cancelar o serviço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! O agendamento foi mantido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1715372657662",
+      "conditions": "@sim-nao:não",
+      "dialog_node": "node_8_1715372864732",
+      "previous_sibling": "node_7_1715372809990"
+    },
+    {
+      "type": "standard",
+      "title": "Disponibilidade da peça",
+      "output": {
+        "generic": [
+          {
+            "title": "Qual peça você gostaria de consultar a disponibilidade?",
+            "options": [
+              {
+                "label": "Bateria 60ah",
+                "value": {
+                  "input": {
+                    "text": "Bateria 60ah"
+                  }
+                }
+              },
+              {
+                "label": "Bateria 40ah",
+                "value": {
+                  "input": {
+                    "text": "Bateria 40ah"
+                  }
+                }
+              },
+              {
+                "label": "Pneu",
+                "value": {
+                  "input": {
+                    "text": "Pneu"
+                  }
+                }
+              },
+              {
+                "label": "Roda",
+                "value": {
+                  "input": {
+                    "text": "Roda"
+                  }
+                }
+              },
+              {
+                "label": "Pivô",
+                "value": {
+                  "input": {
+                    "text": "Pivô"
+                  }
+                }
+              },
+              {
+                "label": "Compressor",
+                "value": {
+                  "input": {
+                    "text": "Compressor"
+                  }
+                }
+              },
+              {
+                "label": "Barra estabilizadora",
+                "value": {
+                  "input": {
+                    "text": "Barra estabilizadora"
+                  }
+                }
+              },
+              {
+                "label": "Braço de direção",
+                "value": {
+                  "input": {
+                    "text": "Braço de direção"
+                  }
+                }
+              },
+              {
+                "label": "Coxim do amortecedor",
+                "value": {
+                  "input": {
+                    "text": "Coxim do amortecedor"
+                  }
+                }
+              },
+              {
+                "label": "Disco de freio dianteiro",
+                "value": {
+                  "input": {
+                    "text": "Disco de freio dianteiro"
+                  }
+                }
+              },
+              {
+                "label": "Disco de freio traseiro",
+                "value": {
+                  "input": {
+                    "text": "Disco de freio traseiro"
+                  }
+                }
+              },
+              {
+                "label": "Filtro de Cabine",
+                "value": {
+                  "input": {
+                    "text": "Filtro de Cabine"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#disponibilidade_pecas",
+      "dialog_node": "node_9_1713466899950",
+      "previous_sibling": "node_6_1713468489093"
+    },
+    {
+      "type": "standard",
+      "title": "Problema não reconhecido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu problema não foi reconhecido em nosso sistema. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1713467021681",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1713467021681"
+      },
+      "conditions": "@problemas_diagnostico != \"freio\" ||    @problemas_diagnostico != \"bateria\" ||   @problemas_diagnostico != \"ar-condicionado\" ||  @problemas_diagnostico != \"alinhamento\" || @problemas_diagnostico != \"balanceamento\"",
+      "dialog_node": "node_9_1713479740298",
+      "previous_sibling": "node_7_1713479516587"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os custos para a manutenção dos freios ficarão em 400 reais (serviço + peças)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713549071996",
+      "conditions": "@sim-nao:sim && $problema == 'freio'",
+      "dialog_node": "node_9_1713549344741",
+      "previous_sibling": "node_3_1713548838741"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os custos para o alinhamento das rodas ficarão em 350 reais (serviço + peças)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1713549071996",
+      "conditions": "@sim-nao:sim && $problema == 'alinhamento'",
+      "dialog_node": "node_9_1713549466040",
+      "previous_sibling": "node_7_1713549391907"
+    },
+    {
+      "type": "standard",
+      "title": "Serviço já marcado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você já tem um serviço marcado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#agendar_servico && $status == \"Agendado\"",
+      "dialog_node": "node_9_1715032500359",
+      "previous_sibling": "node_10_1713464977865"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1713464977865",
+      "variable": "$agendamento_data",
+      "dialog_node": "slot_2_1713465653031",
+      "previous_sibling": "slot_8_1713465337947"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1713464977865",
+      "variable": "$oficina",
+      "dialog_node": "slot_8_1713465337947",
+      "previous_sibling": "slot_9_1713465103211"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1713464977865",
+      "variable": "$servico",
+      "dialog_node": "slot_9_1713465103211",
+      "previous_sibling": "node_6_1713469451443"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "nlp": {
+      "model": "latest"
+    },
+    "generative_ai": {
+      "slot_filling": {
+        "enabled": false
+      }
+    },
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "Chatbot",
+  "name": "Chatbot-dialog"
+}

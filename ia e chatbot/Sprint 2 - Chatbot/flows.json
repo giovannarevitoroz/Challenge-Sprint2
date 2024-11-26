@@ -1,0 +1,610 @@
+[
+    {
+        "id": "b8d3501a3e0b132a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3d7046b77460ddd8",
+        "type": "telegram receiver",
+        "z": "b8d3501a3e0b132a",
+        "name": "",
+        "bot": "f3a31c3d7441e980",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "fff1c2c231ae320f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2359fbb0d4c16b11",
+        "type": "change",
+        "z": "b8d3501a3e0b132a",
+        "name": "Entrada mensagem de texto",
+        "rules": [
+            {
+                "t": "set",
+                "p": "params.session_id",
+                "pt": "msg",
+                "to": "payload.chatId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "chatId",
+                "pt": "msg",
+                "to": "payload.chatId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 260,
+        "wires": [
+            [
+                "d64e547119404209",
+                "d54410d0f8eb91f0"
+            ]
+        ]
+    },
+    {
+        "id": "d64e547119404209",
+        "type": "watson-assistant-v2",
+        "z": "b8d3501a3e0b132a",
+        "name": "",
+        "service-endpoint": "https://api.us-south.assistant.watson.cloud.ibm.com/instances/88079f10-a026-4d98-b8c2-53592ed8a019",
+        "assistant_id": "04076029-c23b-40e8-8411-db98e84cdecc",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": true,
+        "timeout": "",
+        "optout-learning": false,
+        "persist-session-id": false,
+        "x": 1070,
+        "y": 260,
+        "wires": [
+            [
+                "91b146ebab989f18",
+                "d81fe1cee9e6dda3"
+            ]
+        ]
+    },
+    {
+        "id": "d54410d0f8eb91f0",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno ao Watson",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7744f5f2c32e6977",
+        "type": "change",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno ao Telegram",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "chatId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.content",
+                "pt": "msg",
+                "to": "payload.output.generic[0].text",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 200,
+        "wires": [
+            [
+                "bc272636ee05cfdc",
+                "0bd9bed73dd19391"
+            ]
+        ]
+    },
+    {
+        "id": "bc272636ee05cfdc",
+        "type": "telegram sender",
+        "z": "b8d3501a3e0b132a",
+        "name": "",
+        "bot": "f3a31c3d7441e980",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1930,
+        "y": 200,
+        "wires": [
+            [
+                "cd839b3c87a20346",
+                "af30b91d3d0d26c5"
+            ]
+        ]
+    },
+    {
+        "id": "91b146ebab989f18",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno do Watson",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d81fe1cee9e6dda3",
+        "type": "switch",
+        "z": "b8d3501a3e0b132a",
+        "name": "switch text ou option",
+        "property": "payload.output.generic[0].response_type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "text",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "option",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1320,
+        "y": 260,
+        "wires": [
+            [
+                "7744f5f2c32e6977"
+            ],
+            [
+                "cb4dd3acbd8e531f"
+            ]
+        ]
+    },
+    {
+        "id": "0bd9bed73dd19391",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno do texto ao Telegram",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "cb4dd3acbd8e531f",
+        "type": "function",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno opções",
+        "func": "var keyboard = [];\nvar options = msg.payload.output.generic[0].options;\n// opções se adequam a quantidade de opções no array options\nfor (let i = 0; i<options.length;i++) {\n    keyboard.push([options[i].label])\n}\n\nvar opts = {\n    reply_markup: JSON.stringify({\n        keyboard: keyboard,\n        'resize_keyboard' : true,\n        'one_time_keyboard' : true          \n    })\n};\n\nmsg.payload.content = msg.payload.output.generic[0].title;\nmsg.payload.options = opts;\nmsg.payload.chatId = msg.params.session_id;\nmsg.payload.type = 'message'\n\n\n\nreturn [ msg ];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 300,
+        "wires": [
+            [
+                "1eb722e2e9470a8d",
+                "bc272636ee05cfdc"
+            ]
+        ]
+    },
+    {
+        "id": "1eb722e2e9470a8d",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno das opções ao Telegram",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fff1c2c231ae320f",
+        "type": "switch",
+        "z": "b8d3501a3e0b132a",
+        "name": "switch message ou voice",
+        "property": "payload.type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "message",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "voice",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "2359fbb0d4c16b11"
+            ],
+            [
+                "332c9f85e08fce08"
+            ]
+        ]
+    },
+    {
+        "id": "332c9f85e08fce08",
+        "type": "change",
+        "z": "b8d3501a3e0b132a",
+        "name": "Entrada de áudio",
+        "rules": [
+            {
+                "t": "set",
+                "p": "params.session_id",
+                "pt": "msg",
+                "to": "payload.chatId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "chatId",
+                "pt": "msg",
+                "to": "payload.chatId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.weblink",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "70bf8d82d6a21381"
+            ]
+        ]
+    },
+    {
+        "id": "70bf8d82d6a21381",
+        "type": "watson-speech-to-text",
+        "z": "b8d3501a3e0b132a",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": false,
+        "smartformatting": false,
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "BroadbandModel",
+        "bandhidden": "",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "8gWPv0WalcZmAk3l0UdRYpotD22zN_nT3oY759_w-lSb",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/e53c41be-9b8e-478d-8d2d-658eaf1381ec",
+        "x": 860,
+        "y": 400,
+        "wires": [
+            [
+                "d64e547119404209",
+                "219ee84b527dc9c6"
+            ]
+        ]
+    },
+    {
+        "id": "219ee84b527dc9c6",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno de áudio em texto ao Watson",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "0558f2a90cd6b322",
+        "type": "function",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno texto",
+        "func": "msg.payload = msg.payload.output.generic[0].text;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2500,
+        "y": 220,
+        "wires": [
+            [
+                "d8d2257d59190728",
+                "7fd73c80eb64f96c"
+            ]
+        ]
+    },
+    {
+        "id": "7ff1bc5c907aa3ba",
+        "type": "function",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno TTS",
+        "func": "msg.payload = {\n    chatId: msg.params.session_id,\n    content: msg.payload,\n    type:'voice'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3030,
+        "y": 220,
+        "wires": [
+            [
+                "0edff1649aa33f45"
+            ]
+        ]
+    },
+    {
+        "id": "0edff1649aa33f45",
+        "type": "telegram sender",
+        "z": "b8d3501a3e0b132a",
+        "name": "",
+        "bot": "f3a31c3d7441e980",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 3250,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd839b3c87a20346",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "telegram",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2080,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d8d2257d59190728",
+        "type": "watson-text-to-speech",
+        "z": "b8d3501a3e0b132a",
+        "name": "",
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "voice": "pt-BR_IsabelaV3Voice",
+        "voicehidden": "",
+        "format": "audio/wav",
+        "password": "",
+        "apikey": "yPmPbeIctGLL07rv67IqN157b-UApfBTTn8rCkTe1hvS",
+        "payload-response": true,
+        "service-endpoint": "https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/5f471106-1bdd-45d2-97fd-2fe8234d9d41",
+        "x": 2780,
+        "y": 220,
+        "wires": [
+            [
+                "7ff1bc5c907aa3ba"
+            ]
+        ]
+    },
+    {
+        "id": "7fd73c80eb64f96c",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "retorno texto para o tts",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "af30b91d3d0d26c5",
+        "type": "switch",
+        "z": "b8d3501a3e0b132a",
+        "name": "switch text ou option para o tts",
+        "property": "payload.output.generic[0].response_type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "text",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "text",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2210,
+        "y": 240,
+        "wires": [
+            [
+                "0558f2a90cd6b322"
+            ],
+            [
+                "a4f79ea2c0fa351d"
+            ]
+        ]
+    },
+    {
+        "id": "a4f79ea2c0fa351d",
+        "type": "function",
+        "z": "b8d3501a3e0b132a",
+        "name": "Retorno opções",
+        "func": "msg.payload = msg.payload.content.text\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2500,
+        "y": 300,
+        "wires": [
+            [
+                "d8d2257d59190728",
+                "865e5bea47ba45e7"
+            ]
+        ]
+    },
+    {
+        "id": "865e5bea47ba45e7",
+        "type": "debug",
+        "z": "b8d3501a3e0b132a",
+        "name": "retorno opções para o tts",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2710,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f3a31c3d7441e980",
+        "type": "telegram bot",
+        "botname": "PortoAutoTechBot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    }
+]

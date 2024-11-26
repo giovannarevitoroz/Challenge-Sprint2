@@ -1,0 +1,22 @@
+Membros:
+
+Giovanna Revito Roz - RM558981
+Kaian Gustavo de Oliveira Nascimento - RM558986
+Lucas Kenji Kikuchi - RM554424
+
+Credenciais:
+
+Telegram Bot: PortoAutoTechBot
+Telegram Key: 7118780864:AAHw_06hA8vBbcWbmL-HJFjCPcaLaAdOofg
+
+API Key Watson: xEyFXeqWX_LYUVzceqHvV13BxxqkCjp4NO_5Q1ozDiZZ
+Service Endpoint: https://api.us-south.assistant.watson.cloud.ibm.com/instances/88079f10-a026-4d98-b8c2-53592ed8a019
+Assistant ID: 04076029-c23b-40e8-8411-db98e84cdecc
+
+API Key STT: 8gWPv0WalcZmAk3l0UdRYpotD22zN_nT3oY759_w-lSb
+Service Endpoint: https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/e53c41be-9b8e-478d-8d2d-658eaf1381ec
+
+API KEY TTS: eKvR2JD8Evk_ol-SUOxUEILLcuQvZrPFb_g5to_fBXNO
+Service Endpoint: https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/582725ee-64d6-4280-a206-554b8dfef5f8
+
+Link do vídeo: https://youtu.be/Z-RE5lXoCLI?si=apmtc_8ORGiOJOtf
